@@ -169,3 +169,5 @@ def delete_one_order_detail(order_detail_id: int, db: Session = Depends(get_db))
     if order_detail is None:
         raise HTTPException(status_code=404, detail="Order detail not found")
     return order_details.delete(db=db, order_detail_id=order_detail_id)
+
+#finished
